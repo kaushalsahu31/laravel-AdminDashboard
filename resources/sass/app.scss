@@ -1,0 +1,117 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.addproduct{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.admin-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .heading{
+        background-color: #292A2E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h2{
+            align-self: center;
+            color: white;
+            margin-bottom: 0px;
+            padding-top: 15px;
+        }
+
+    }
+    .body-data{
+        width: 100%;
+        .grid-box{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 100%;
+
+        }
+        .filter{
+            margin-top: 20px;
+            .searchbox{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        #user_table{
+            margin-bottom: 40px;
+        }
+        .modal{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(54, 54, 54, 0.455);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            .modal-container{
+                background-color: white;
+                border-radius: 20px;
+                width: 30vw;
+                height: 40vh;
+                padding: 20px;
+                .flex{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    .closebox{
+                        position: relative;
+                        width: 100%;
+                        h2 {
+                            text-align: center;
+                            margin-bottom: 30px;
+                            width: 100%;
+                        }
+                        #closs{
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            font-size: 30px;
+                            
+                        }
+                    }
+                   
+                    .roles{
+                        display: grid;
+                        width: 100%;
+                        grid-template-columns: repeat(3,1fr);
+                        .img{
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            align-items: center;
+                            img{
+                                cursor: pointer;
+                            }
+                            p{
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+
+}
